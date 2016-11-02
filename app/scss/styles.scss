@@ -1,0 +1,1178 @@
+
+/*Variables*/
+$title-color: #333333;
+$montbold: 'Montserrat-Bold', Arial, sans-serif;
+$montreg: 'Montserrat-Regular', Arial, sans-serif;
+$roblight: 'Roboto-Light', Arial, sans-serif;
+$style: #ff4e50;
+
+a{
+text-decoration: none;
+}
+
+
+/*==================================================== MOBILE============================================= */
+
+/*------------------------------------------- Header------------------------------------- */
+header {
+    height: 540px;
+    width: 100%;
+    background:url(../img/header.jpg) no-repeat center center;
+    background-color: #553322;
+    background-size: cover;
+
+    .header__wrapper {
+        width: 320px;
+        margin: 0 auto;
+    }
+    
+}
+
+.logo {
+    position: absolute;
+    margin-top: 171px;
+    margin-left: 71px;
+}
+.auth {
+    position: absolute;
+    margin-top: 21px;
+    margin-left: 58px;
+    & .auth__link{
+        display: inline-block;
+        margin: -1px -7px 0 2px;
+        color: #fff;
+        font-size: 14px;
+        font-family: $montreg;
+        text-align: center;
+        line-height: 32px;
+        width: 85px;
+        border: 2px solid rgba(255,255,255,0);
+        border-radius: 18px;
+        behavior: url("css/PIE/pie.htc");
+        zoom: 1;
+
+               
+        &:hover {
+            border: 2px solid rgba(255,255,255,1);
+            transition-delay: 0.15s;
+        }
+    }
+}
+.promo {
+    &__title {
+        width: 300px;
+        padding-top: 227px;
+        font-size: 30px;
+        font-family: $montbold;
+        text-align: center;
+        color: #fff;
+        margin: 0px 11px;
+        line-height: 32px;
+
+        span{
+            line-height: 38px;
+        }
+        
+    }
+    &__text {
+        width: 230px;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: $roblight;
+        padding-left: 44px;
+        margin-top: 6px;
+        color: white;
+        text-align: center;
+    }
+    &__link {
+        width: 280px;
+        height: 28px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 17px;
+        font-size: 14px;
+        font-family: $montreg;
+        color: white;
+        text-align: center;
+        padding-top: 12px;
+        background-color: $style;
+        border-radius: 20px;
+        behavior: url("css/PIE/pie.htc");
+        position: relative;
+        border: 2px solid rgba(255,255,255,0);
+        zoom: 1;
+
+        span{
+            margin: 3px 0 0 -3px;
+            display: block;
+        }
+
+        &:hover {
+            border: 2px solid rgba(255,255,255,1);
+            transition-delay: 0.15s;
+            padding-top: 12px;
+        }
+    }
+}
+
+
+/* --------------------------Slider----------------------------- */
+.sliders {
+    height: 810px;
+    width: 100%;
+    &__wrap {
+        width: 320px;
+        margin: 0 auto;
+    }
+}
+.sliders__title {
+    margin-top: 37px;
+    font-family: $montbold;
+    font-size: 22px;
+    text-align: center;
+    margin-left: -5px;
+    color: $title-color;
+    margin-bottom: 3px;
+}
+
+.jcarousel__prev {
+    width: 40px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    margin-left: 1px;
+    & img {
+        border: none;
+    }
+}
+.jcarousel__next {
+    width: 40px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    margin-left: 268px;
+    & img {
+        border: none;
+    }
+}
+
+.jcarousel{
+    width: 300px;
+    height: 240px;
+    margin: 17px 0 0 9px;
+    border-radius: 5px;
+    behavior: url("css/PIE/pie.htc");
+    overflow: hidden;
+    
+    .slider{
+        width: 10000px;
+        height: 100%;
+        }   
+        .step{
+            float: left;
+            height: 240px;
+            width: 300px;
+            background-position: center;
+            
+            .step__nav{
+                display: none;
+            }
+            .step__link {
+                display: block;
+                margin: 70px 0 0 21px;
+                width: 68px;
+                height: 14px;
+                background-color: $style;
+                color: white;
+                border-radius: 10px;
+                behavior: url("css/PIE/pie.htc");
+                font-size: 10px;
+                font-family: $montreg;
+                letter-spacing: 1.9px;
+                padding-left: 2px;
+                padding-top: 5px;
+                text-align: center;
+
+                &:hover {
+                    color: $style;
+                    background-color: #fff;
+                    transition-delay: 0.2s;
+                    }
+                }
+
+            .step__title{
+                width: 170px;
+                margin: 15px 0 0 19px;
+                font-size: 24px;
+                font-family: $montbold;
+                display: block;
+                line-height: 28px;
+                color: white;
+                }
+            .step__text{
+                font-family: $roblight;
+                font-size: 14px;
+                margin: 12px 0 0 20px;
+                margin-left: 19px;
+                width: 265px;
+                line-height: 17px;
+                color: #fff;
+            }
+        }
+        .step--first{
+            background-image: url(../img/slide1.png);
+
+
+        }
+        .step--second{
+            background-image: url(../img/slide2.png);
+        }
+        .step--third{
+            background-position: 0px -1px;
+            background-image: url(../img/slide3.png);   
+        }
+    }
+    .jcarousel--second{
+        margin: 9px 0 0 10px;
+
+        .slider--second{
+
+            .step__link{
+                margin: 100px 0 0 21px;
+            }
+            .step__title{
+                margin: 16px 0 0 18px;
+                width: 200px;
+            }
+            .step__text{
+                margin: 11px 0 0 20px;
+                letter-spacing: 0.05px
+            }
+        }
+    }
+    .jcarousel--third{
+        margin: 10px 0 0 10px;
+
+        .step{
+            .step__title{
+                line-height: 29px;
+            }
+        }
+    }
+
+   
+/* -----------------------------------Partners------------------------------- */
+
+.partners {
+    width: 320px;
+    height: 1080px;
+    margin: 0 auto;
+    .partners__title {
+        line-height: 25px;
+        width: 280px;
+        font-family: $montbold;
+        font-size: 22px;
+        text-align: center;
+        margin-left: 16px;
+        color: $title-color;
+        margin-top: 3px;
+    }
+    .partners__link {
+        display: block;
+        float: left;
+        width: 276px;
+        height: 25px;
+        font-size: 14px;
+        font-family: $montbold;
+        color: $style;
+        border: 2px solid $style;
+        border-radius: 20px;
+        behavior: url("css/PIE/pie.htc");
+        position: relative;
+        top: 16px;
+        left: 18px;
+        zoom: 1;
+        text-align: center;
+        padding-top: 11px;
+            &:hover {
+            background-color: $style;
+            color: white;
+            transition-delay: 0.2s;
+        }
+    }
+}
+.partner {
+    width: 235px;
+    float: left;
+    margin: 15px 0 10px 48px;
+}
+    .partner__avatar {
+        height: 120px;
+        width: 120px;
+        display: block;
+        background: url(../img/sprite.png) -2px 0 no-repeat;
+        border-radius: 50%;
+        behavior: url("css/PIE/pie.htc");
+        position: relative;
+        zoom: 1;
+    }
+    
+    .partner__circle {
+        width: 32px;
+        height: 32px;
+        display: block;
+        border: 4px solid white;
+        border-radius: 50%;
+        behavior: url("css/PIE/pie.htc");
+        position: relative;
+        zoom: 1;
+        background-color: $style;
+        position: absolute;
+        margin-top: -34px;
+        margin-left: 136px;
+    }
+    .partner__icon {
+        width: 20px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        margin-top: -23px;
+        margin-left: 147px;
+        background: url(../img/sprite.png) 0 -128px no-repeat;
+    }
+    .partner__name {
+        margin: 21px 0 0 58px;
+        font-family: $montbold;
+        font-size: 14px;
+        display: block;
+        color: $title-color;
+        .partner:hover {
+            color: $style;
+            transition-delay: 0.15s;
+        }
+    }
+    .partner__info {
+        margin: 15px 0 0 6px;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: $roblight;
+        color: #8f8f8f;
+        width: 210px;
+        text-align: center;
+        letter-spacing: 0.1px;
+    }
+    .partner--first{
+        .partner__avatar{
+        top:1px;
+        left: 52px;
+        }
+    }
+    .partner--second {
+        width: 235px;
+        position: absolute;
+        margin-left: 40px;
+        margin-top: 505px;
+        .partner__avatar {
+            background-position: -124px -1px;
+            margin-left: 57px;
+        }
+        .partner__circle {
+            margin-left: 141px;
+            background-color: #1cd7ad;
+        }
+        .partner__icon {
+            width: 17px;
+            height: 16px;
+            background-position: -22px -128px;
+            margin-left: 153px;
+            margin-top: -22px;
+        }
+        .partner__name {
+            margin: 22px 0 0 62px;;
+        }
+        .partner__info {
+            margin: 15px 0 0 9px;
+            width: 214px;
+        }           
+    }
+    .partner--third {
+        width: 235px;
+        margin-left: 39px;
+        .partner__avatar {
+            background-position: -249px -1px;
+            margin-left: 61px;
+        }
+        .partner__circle {
+            margin-left: 146px;
+            background-color: #ffa507;
+        }
+        .partner__icon {
+            width: 15px;
+            height: 18px;
+            background-position: -41px -127px;
+            margin-left: 160px;
+            margin-top: -22px;
+        }
+        .partner__name {
+            margin-left: 72px;
+        }
+        .partner__info {
+            margin: 14px 0 0 9px;
+            width: 220px;
+            line-height: 17px;
+        }           
+    }
+    .partner--fourth {
+        margin-left: 32px;
+        margin-top: 245px;
+        .partner__avatar {
+            background-position: -375px -2px;
+            margin-left: 66px;
+        }
+        .partner__circle {
+            margin-left: 150px;
+            background-color: #4e73db;
+        }
+        .partner__icon {
+            width: 17px;
+            height: 17px;
+            background-position: -56px -128px;
+            margin-left: 161px;
+            margin-top: -22px;
+        }
+        .partner__name {
+            margin-left: 72px;
+        }
+        .partner__info {
+            margin: 14px 0 0 26px;
+            width: 198px;
+            line-height: 18px;
+        }           
+    }
+
+
+/* -------------------------------------------Masonry----------------------------------------- */
+.images {
+    height: 100%;
+    width: 100%;
+}
+.images__wrap {
+    width: 320px;
+    margin: 0 auto;
+    .images__title {
+        font-family: $montbold;
+        font-size: 22px;
+        text-align: center;
+        margin: 11px 0 0 0;
+        line-height: 25px;
+        color: $title-color;
+    }
+}
+.grid {
+    width: 320px;
+    margin: 15px auto; 
+    &-item {
+        width: 94%;
+        margin-bottom: 6px;
+        margin-left: 10px;
+        margin-right: 10px;
+        float: left;
+        position: relative;
+        border-radius: 4px;
+        behavior: url("css/PIE/pie.htc");
+    }
+    &-img {
+        width: 100%;
+        height: 120px;
+        border-radius: 4px;
+        behavior: url("css/PIE/pie.htc");
+    }
+    &-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        font-family: $montbold;
+        font-size: 22px;
+        text-align: center;
+        height: 16%;
+        color: white;
+        text-transform: capitalize;
+    }
+}
+
+/* ------------------------Search--------------------------------------- */
+.search{
+    clear: both;
+    height: 229px;
+    width: 100%;
+    margin-top: 24px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 2px solid #ff4e50;
+}
+.search__wrap {
+    width: 320px;
+    margin: 0 auto;
+    .search__title {
+        font-family: $montbold;
+        font-size: 22px;
+        text-align: center;
+        display: block;
+        line-height: 25px;
+        margin-left: -3px;
+        color: $title-color;
+    }
+    .search__text {
+        margin: 13px 0 0 -3px;
+        font-family: $roblight;
+        font-size: 18px;
+        text-align: center;
+        color: $title-color;
+    }
+    form {          
+        margin-top: 18px;
+        .search__input {
+            height: 38px;
+            width: 264px;
+            border: 1px solid #cccccc;
+            color: $title-color;
+            font-size: 14px;
+            font-family: $roblight;
+            border-radius: 3px;
+            behavior: url("css/PIE/pie.htc");
+            padding-left: 14px;
+            margin-left: 18px;
+            margin-bottom: 10px;
+            outline: none;
+        }
+        .search__submit {
+            width: 280px;
+            height: 40px;
+            background-color: $style;
+            margin-left: 18px;
+            margin-top: -1px;
+            border: none;
+            border-radius: 20px;
+            behavior: url("css/PIE/pie.htc");
+            font-size: 14px;
+            font-family: $montbold;
+            color: white;
+            outline: none;
+            cursor: pointer;
+            &:hover {
+                background-color: #cccccc;
+                color: $style;
+            }
+        }
+    }
+}
+
+/* ------------------------------Footer---------------------------------------*/
+footer {
+    height: 190px;
+    width: 100%;
+    border-top: 4px solid $style;
+}
+.footer {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 17px;
+    &__logo {
+        font-family: $montbold;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        padding-top: 16px;
+        color: $style;
+        margin-left: 86px;
+    }
+    .footer__title {
+        font-family: $montbold;
+        font-size: 14px;
+        color: $title-color;
+        float: left;
+        margin-left: 124px;
+        margin-top: 15px;
+        &--second {
+            margin-top: 37px;
+            margin-left: 129px;
+        }
+    }
+    .menu {
+        list-style: none;
+        clear: both;
+        position: absolute;
+        margin-top: 31px;
+        margin-left: 62px;
+    }
+    .menu__item{
+        margin-right: 13px;
+        float: left;
+    }
+    .menu__link {
+        color: #666666;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: $roblight;
+        &:hover {
+            color: $style;
+            transition-delay: 0.15s;
+        }
+    }
+    .footer__desby {
+            clear: both;
+            padding-top: 18px;
+            margin-left: 105px;
+        & p {
+            font-family: $montbold;
+            font-size: 10px;
+            color: #cccccc;
+            letter-spacing: 1px;
+            padding-bottom: 6px;
+            padding-left: 13px;
+        }
+    }
+}
+
+
+
+/*====================TABLET=================================*/
+
+
+@media screen and (min-width: 768px) {
+
+
+    header {
+        height: 700px;
+        width: 100%;
+        background:url(../img/header.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    .header__wrapper {
+        min-width: 760px;
+        height: 700px;
+        margin: 0 auto;
+    }
+    .logo {
+        margin-left: 46px;
+        margin-top: 47px;
+    }
+    .auth{
+        margin-left: 536px;
+        margin-top: 40px;
+    }
+    .promo {
+        &__title {
+            width: 500px;
+            padding-top: 215px;
+            margin-left: 127px;
+            line-height: 62px;
+            font-size: 52px;
+        }
+        &__text {
+            display: block;
+            margin: 29px 0 0 -47px;
+            width: 100%;
+            font-size: 24px;
+            }
+        &__link {
+            width: 225px;
+            margin: 35px auto;            
+            margin-left: 265px;
+            line-height: 20px;
+        }
+    }
+
+    /*------------------SLIDERS=-----------------------*/
+    .sliders{
+        margin: 96px auto;
+        height: 459px;
+
+        .sliders__wrap{
+            max-width: 768px;
+            width: 100%;
+
+            .sliders__title{
+                margin-left: 7px;
+            }
+
+            .jcarousel{
+                height: 400px;
+                width: 237px;
+                float: left;
+                margin: 35px 11px 0 8px;
+
+                .slider{
+                    height: 100%;
+
+                    .step{
+                        height: 100%;
+                        width: 237px;
+
+                        .step__nav{
+                            display: block;
+                            margin: 39px 22px 0;
+                        }
+                        .step__nav--prev{
+                            float: left;
+                        }
+                        .step__nav--next{
+                            float: right;
+                        }
+
+                        .step__link{
+                            margin: 212px 0px 0 22px;;
+                        }
+                        .step__title{
+                            margin: 16px 0 0 20px;
+                        }
+                        .step__text{
+                            margin: 12px 0 0 21px;
+                            width: 210px;
+                        }    
+                    }
+                    .step--second{
+                        height: 100%;
+
+                        .step__nav{
+                        margin: 39px 11px 0;
+                        }
+                        .step__link{
+                            margin: 259px 0px 0 22px;
+                        }
+                        .step__text{
+                            margin: 10px 0 0 21px;
+                            width: 200px;
+                        }    
+                    }
+                }
+            }
+        }
+    }
+
+    /*----------------------Partners--------------------*/
+    .partners{
+        max-width: 500px;
+        width: 100%;
+        height: 700px;
+
+        .partners__title{
+            width: 462px;
+        }
+        .partner{
+            margin: 0;
+            position: relative;  
+        }
+        .partner--first{
+            margin: 31px 0 0 11px;
+        }
+        .partner--second{
+            margin: 31px 0px 0px 17px;
+
+            .partner__avatar{
+                margin-left: 56px;
+                margin-top: 2px;
+            }
+            .partner__name{
+                margin: 21px 0 0 60px;
+            }
+            .partner__info{
+                margin: 14px 0 0 7px;
+            }
+        }
+        .partner--third{
+            margin: 56px 0 0 0;
+            .partner__name{
+                margin: 19px 0 0 74px;
+            }
+            .partner__info{
+                margin: 15px 0 0 11px;
+            }
+        }
+        .partner--fourth{
+            margin: 55px 0 0 19px;
+
+            .partner__name{
+                margin-left: 70px;
+            }
+            .partner__info{
+                margin: 14px 0 0 24px;
+            }
+        }
+        .partners__link{
+            top: 69px;
+            left: -82px;
+            width: 187px;
+        }
+    }
+
+
+/*-------------------------- Masonry-----------------------*/
+    .images {
+       width: 100%;     
+       margin-top: 27px;
+       height: 1033px;
+       }
+    .images__wrap {
+        width: 768px;
+        /*width: 100%;*/
+        .images__title {
+            margin-left: -3px;
+            margin-top: -1px;
+        }
+    }
+   .grid {
+    max-width: 960px;
+    width: 768px;
+    height: 1000px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  width: 31%;
+  float: left;
+  margin-bottom: 20px;
+}
+.grid-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    behavior: url("css/PIE/pie.htc");
+}
+.grid-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        font-family: $montbold;
+        font-size: 22px;
+        text-align: center;
+        height: 16%;
+        color: white;
+        text-transform: capitalize;
+    }
+.grid-sizer{
+    width: 33%;
+        margin-bottom: 6px;
+        margin-left: 10px;
+        margin-right: 10px;
+        float: left;
+        position: relative;
+        border-radius: 4px;
+        behavior: url("css/PIE/pie.htc");
+}
+
+.grid-item--width2 { width: 62%; }
+
+    /*----------------------Search-------------------------*/
+
+    .search{
+        height: 260px;
+        width: 100%;
+    }
+    .search__wrap {
+        width: 760px;
+        margin-top: 91px;
+        .search__title {
+            width: 760px;
+            margin-left: 0px;
+        }
+        .search__text {
+            margin-left: -2px;
+            margin-top: 33px;
+        }
+        form {
+            width: 100%;
+            height: 40px;
+            margin: 0;
+            margin-top: 40px;
+            .search__input {
+                width: 225px;
+                margin-left: 175px;
+                outline: none;
+            }
+            .search__submit {
+                width: 160px;
+                margin-left: 7px;
+            }
+        }
+    }
+
+ /*--------------------Footer----------------------*/
+
+    .footer{
+    max-width: 768px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+
+    &__logo{
+        display: inline-block;
+        margin: 22px 0 0 40px;
+    }
+    .footer__title{
+        float: none;
+        display: inline-block; 
+        margin: 0px 0 0 78px;
+        vertical-align: middle;
+        height: 23px;
+        &--second{
+            margin-left: 99px;
+        }
+    }
+    .footer__desby{
+        height: 70px;
+        width: 149px;
+        float: right;
+        margin: 42px 0 0 0px;
+        padding: 0;
+
+        p{
+            margin: -3px 0 9px 30px;
+            padding: 0;
+        }
+    }
+    .menu{
+        margin: 1px 0 0 266px;
+    }
+    .menu__item{
+        float: none;
+    }
+
+}
+}
+/*==========================END of a TABLET==============================*/
+
+
+
+/*===========================DESKTOP======================================*/
+
+
+
+@media  screen and (min-width: 960px){
+
+/*--------------Header---------------------*/
+
+header{
+    max-width: 100%;
+    .header__wrapper{
+        max-width: 960px;
+        .logo{
+            margin-left: -91px;
+        }
+        .auth{
+            margin-left: 670px;
+        } 
+        
+    }
+
+}
+
+
+/*----------------------------Sliders-----------------------------*/
+
+
+.sliders{
+    .sliders__wrap{
+        max-width: 960px;
+
+        .sliders__title{
+            margin-left: -4px;
+        }
+        .jcarousel{
+            width: 300px;
+
+            .slider{
+                .step{
+                    .step__nav{
+                        margin: 152px 22px 0;
+                    }
+                    .step__link{
+                        margin: 229px 0px 0 22px;
+                    }
+                    .step__text{
+                        width: 274px;
+                    }
+                }
+                .step--second{
+                    
+                    .step__link{
+                        margin: 259px 0px 0 22px;
+                    }
+                }
+            }
+        }  
+    }
+}
+
+/*-----------------------Partners-------------------------------------*/
+
+    .partners{
+        max-width: 960px;
+        width: 100%;
+        height: 440px;
+        
+        .partners__wrap{
+            max-width: 960px;
+            width: 100%;
+
+            .partners__title{
+                margin: 0 0 0 -3px;
+                width: 100%;
+            }
+        }
+        .partner--first{
+            margin: 31px 0 0 7px;
+        }
+        .partner--second{
+            margin: 31px 0 0 2px;
+        }
+        .partner--third{
+            margin: 33px 0 0 -1px;
+        }
+        .partner--fourth{
+            margin: 33px 0 0 2px;
+        }
+        .partners__link{
+            left: -330px;
+        }
+    }
+
+/*--------------------------------Masonry------------------------------------*/
+
+.images {
+        width: 100%;
+    }
+    .images__wrap {
+        width: 940px;
+        height: 1000px;
+        .images__title {
+            width: 100%;
+        }
+    }
+    
+   .grid {
+  width: 960px;
+  height: 1000px;
+  margin-top: 36px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  width: 31%;
+  float: left;
+  margin-bottom: 20px;
+}
+.grid-img{
+    width: 100%;
+    border-radius: 6px;
+    behavior: url("css/PIE/pie.htc");
+}
+.grid-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        font-family: $montbold;
+        font-size: 22px;
+        text-align: center;
+        height: 16%;
+        color: white;
+        text-transform: capitalize;
+    }
+.grid-sizer{
+        margin-bottom: 6px;
+        margin-left: 10px;
+        margin-right: 10px;
+        float: left;
+        position: relative;
+        border-radius: 4px;
+        behavior: url("css/PIE/pie.htc");
+}
+
+.grid-item--width2 {
+    width: 65%;
+}
+
+/*-------------------Search-------------------------------------------------*/
+.search{
+    border-bottom: 2px solid #ff4e50;
+}
+.search__wrap{
+    max-width: 960px;
+    width: 100%;
+    height: 100%;
+    margin-top: 93px;
+
+    .search__title{
+        margin-left: 97px;
+    }
+    .search__text{
+        margin-left: -6px;
+        margin-top: 34px;
+    }
+    #search__form{   
+        .search__input {
+            margin-left: 273px;
+        }
+    }
+
+}
+
+/*-----------------------------------Footer--------------------------------*/
+
+.footer{
+    width: 100%;
+    max-width: 960px;
+    &__logo{
+        margin: 20px 0 0 8px;
+    }
+    .footer__title{
+        margin: 0px 0 0 93px;
+        height: 20px;
+        vertical-align: middle;
+        &--second{
+            margin-left: 89px;
+        }
+    }
+    .menu{
+        margin: 4px 0 0 249px;
+    }
+    .footer__desby{
+        margin: 39px 0 0 0px;
+
+        p{
+            margin: -3px 0 9px 59px;
+        }
+        img{
+            margin-left: 28px;
+        }
+    }
+}
+
+
+ /*============================END of DESKTOP================================*/
+}
+
+
+
+
+
